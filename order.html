@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="./css/order.css"/>
+		<script src="js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="./js/order.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="order-page">
+			<div class="order-header">
+				<div class="cart-headers">
+					<div class="cart-header-logo">
+						<a href="index.html" class="on-title-a">
+							<img src="./img/cart/cart-logo.png" class="on-title-img" >
+						</a>
+					</div>
+					<ul class="cart-header-order">
+						<li>
+							<span class="cart-header-order1">购物车</span>
+							<span class="cart-header-order2"> > </span>
+						</li>
+						<li>
+							<span class="cart-header-order3">确认订单</span>
+							<span class="cart-header-order2"> > </span>
+						</li>
+						<li>
+							<span class="cart-header-order1">在线支付</span>
+							<span class="cart-header-order2"> > </span>
+						</li>
+						<li>
+							<span class="cart-header-order1">完成</span>
+						</li>
+					</ul>
+					<ul class="cart-header-user">
+						<li>
+							<a href="Myorder.html" class="cart-header-usera">我的订单</a>
+						</li>
+						<li>
+							<span class="cart-header-userp">用户679388496的商城</span>
+							<img src="./img/cart/cart-down.png" class="cart-header-userImg">
+						</li>
+					</ul>
+					<ul class="cart-header-userHide">
+						<li>
+							<a href="#">地址管理</a>
+						</li>
+						<li>
+							<a href="#">我的收藏</a>
+						</li>
+						<li>
+							<a href="#">我的回购金</a>
+						</li>
+						<li>
+							<a href="#">问题反馈</a>
+						</li>
+						<li>
+							<a href="on.html">退出</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="order-content">
+				<div class="order-contents">
+					<!-- 收货地址 -->
+					<div class="order-address">
+						<div class="address-title">收货人信息</div>
+						<ul class="address-add">
+							<li class="address-add1">
+								<img src="./img/order/order-add.png" class="address-add1-img">
+								<p class="address-add1-p">添加新地址</p>
+							</li>
+						</ul>
+						<!-- 点击添加时弹出隐藏的地址框-->
+						<div class="address-addTan">
+							<div class="address-addTans">
+								<div class="address-addTans-header">
+									<div class="addTans-header-title">添加新地址</div>
+									<div class="addTans-header-close">X</div>
+								</div>
+								<div class="address-addTans-main">
+									<div class="address-addTans-mains">
+										<div class="address-addTans-mains1">
+											<div class="addTans-mains-name">
+												<div class="addTans-mains-name1">
+													收货人姓名
+													<span class="name1-p2">*</span>
+												</div>
+												<div class="addTans-mains-name2">
+													<input type="text" placeholder="姓名长度不超过15个文字" class="name2-In"/>
+													<div class="name2-Tips"></div>
+												</div>
+												<div class="addTans-mains-name3">
+													收货人手机号
+													<span class="name1-p2">*</span>
+												</div>
+												<div class="addTans-mains-name4">
+													<input type="text" placeholder="请输入11位手机号" class="name4-In"/>
+													<div class="name4-Tips"></div>
+												</div>
+											</div>
+											<div class="addTans-mains-address">
+												<div class="addTans-mains-address1">
+													收货人地址
+													<span class="name1-p2">*</span>
+												</div>
+												<div class="addTans-mains-address2">
+													<div class="address2-sheng">
+														<input type="text" placeholder="省份/直辖市" class="sheng-In"/>
+														<!-- 隐藏的省份 -->
+														<div class="sheng-InHide">
+															<ul class="sheng-InHide-ul">
+																<li>山东省</li>
+																<li>天津市</li>
+																<li>辽宁省</li>
+																<li>北京市</li>
+																<li>湖北省</li>
+																<li>河南省</li>
+																<li>江苏省</li>
+																<li>福建省</li>
+																<li>安徽省</li>
+															</ul>
+														</div>
+													</div>
+													<div class="address2-city">
+														<input type="text" placeholder="城市" class="city-In"/>
+														<div class="city-InHide">
+															<ul class="city-InHide-ul">
+																<li>青岛市</li>
+																<li>济南市</li>
+																<li>泰安市</li>
+																<li>烟台市</li>
+																<li>潍坊市</li>
+																<li>菏泽市</li>
+																<li>聊城市</li>
+																<li>临沂市</li>
+																<li>枣庄市</li>
+															</ul>
+														</div>
+													</div>
+													<div class="address2-qu">
+														<input type="text" placeholder="区/县" class="qu-In"/>
+														<div class="qu-InHide">
+															<ul class="qu-InHide-ul">
+																<li>城阳区</li>
+																<li>市北区</li>
+																<li>四方区</li>
+																<li>崂山区</li>
+																<li>李沧区</li>
+																<li>黄岛区</li>
+																<li>市南区</li>
+																<li>胶南</li>
+																<li>胶州</li>
+															</ul>
+														</div>
+													</div>
+													<div class="address2-zhen">
+														<input type="text" placeholder="乡镇/街道" class="zhen-In"/>
+														<div  class="zhen-InHide">
+															<ul class="zhen-InHide-ul">
+																<li>城阳街道</li>
+																<li>夏庄街道</li>
+																<li>棘洪滩街道</li>
+																<li>上马街道</li>
+																<li>红岛街道</li>
+																<li>河套街道</li>
+																<li>惜福镇街道</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="addTans-mains-addDetails">
+												<div class="addDetails1">
+													详细地址
+													<span class="name1-p2">*</span>
+												</div>
+												<div class="addDetails2">
+													<input type="text" class="addDetails2-In" placeholder="请输入4-50个文字的详细地址，例如路名、门牌号"/>
+													<div class="addDetails2-Tip"></div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="address-addTans-bottom">
+									<div class="addTans-bottom1">确认</div>
+									<div class="addTans-bottom2">取消</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- 确认订单信息 -->
+					<div class="order-product">
+						<div class="product-Title">确认订单信息</div>
+						<div class="product-content">
+							<div class="product-contentTable">
+								<div class="contentTable1">
+									<ul class="contentTable1-ul">
+										<li class="contentTable1-meizu1">供应商：魅族</li>
+										<li class="contentTable1-peice1">单价</li>
+										<li class="contentTable1-count1">数量</li>
+										<li class="contentTable1-tocal1">小计</li>
+										<li class="contentTable1-Sf">配送方式</li>
+									</ul>
+								</div>
+								<div class="contentTable2">
+									<div class="contentTable2-right">
+										<ul class="contentTable2-right1">
+											<li class="right1-name">
+												<a href="details.html" class="right1-name1">
+													<img src="./img/order/order-number1.png" class="right1-nameImg">
+												</a>
+												<a href="details.html" class="right1-name2">
+													<p>魅族 17</p>
+													<p class="right1-nameP">全网通公开版 十七度灰 8+128GB</p>
+												</a>
+											</li>
+											<li class="right1-price">
+												<p>￥3699.00</p>
+											</li>
+											<li class="right1-count">1</li>
+											<li class="right1-tocal">￥3699.00</li>
+										</ul>
+										
+										<ul class="contentTable2-right2">
+											<li class="right1-name">
+												<a href="details.html" class="right1-name1">
+													<img src="./img/order/order-number2.png" class="right1-nameImg">
+												</a>
+												<a href="details.html" class="right1-name2">
+													<p>魅族 17</p>
+													<p class="right1-nameP">全网通公开版 十七度灰 8+128GB</p>
+												</a>
+											</li>
+											<li class="right1-price">
+												<p>￥3699.00</p>
+											</li>
+											<li class="right1-count">1</li>
+											<li class="right1-tocal">￥3699.00</li>
+										</ul>
+									</div>
+									<div class="contentTable2-left">
+										<p class="contentTable2-leftP1">快递配送：运费</p>
+										<p class="contentTable2-leftP2">￥0.00</p>
+									</div>
+								</div>
+								<div class="contentTable3">
+									<div class="contentTable3-right">
+										<div class="contentTable3-right1">
+											<p class="right1-p1">发票类型：电子发票</p>
+											<a href="#" class="right1-p3">修改</a>
+										</div>
+										<p class="contentTable3-right2">
+											发票抬头：默认为收货人姓名
+										</p>
+									</div>
+									<div class="contentTable3-left">
+										<p class="contentTable3-left1">合计：</p>
+										<p class="contentTable3-left2">￥7398.00</p>
+									</div>
+								</div>
+								<div class="contentTable4">
+									<span>备注：</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- 使用折扣卷 -->
+					<div class="order-discount">
+						<div class="discount-title">使用优惠抵扣</div>
+						<div class="discount-content">
+							<ul class="discount-content-ul">
+								<li class="discount-content1">
+									<div class="content1-title">+&nbsp;&nbsp;使用回购金</div>
+									<div class="content1-hide">
+										<div class="content1-hide1">
+											<span class="content1-hide1-sp1">我的回购金余额：</span>&nbsp;
+											<span class="content1-hide1-sp2">￥0.00</span>&nbsp;
+											<span class="content1-hide1-sp3">
+												（使用说明：系统会根据您选购的商品自动计算出最大可以用回购金数量，以及可享受的魅族商城补贴，该补贴不可退。）
+											</span>
+										</div>
+										<div class="content1-hide2">
+											<input type="radio" name="2"/>
+											<span class="content1-hide2-sp"> 可使用￥0.00元回购金</span
+										</div>
+										<div class="content1-hide3">
+											<input type="radio" name="2"/>
+											<span class="content1-hide3-sp">暂不使用回购金</span>
+										</div>
+									</div>
+								</li>
+								<li class="discount-content2">
+									<div class="content2-title">+&nbsp;&nbsp;使用礼品卡</div>
+									<div class="content2-hide">
+										<div class="content2-hides">
+											<div class="content2-hides1">
+												<input type="text" placeholder="请输入礼品卡号" class="content2-hides1-sp1"/>
+												<input type="text" placeholder="请输入密码" class="content2-hides1-sp1"/>
+												<div class="content2-hides1-sp2">添加并使用</div>
+											</div>
+											<div class="content2-hides2">
+												<span class="content2-hides2-sp">
+													该礼品卡为一次性全额消费卡，选购商品价格需大于礼品卡金额。一次只能消费一张礼卡，该卡一经扣款成功则无法退款。
+												</span>
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!-- 支付方式 -->
+					<div class="order-pay">
+						<div class="order-pay-header">
+							<div  class="order-pay-title">选择支付方式</div>
+							<div  class="order-pay-main">
+								<!-- 微信支付宝 -->
+								<div class="pay-main1">
+									<div class="pay-main1-Kpay">快捷支付</div>
+									<div class="pay-main-type">
+										<div class="payTyep1">
+											<input type="radio" name="3" class="payTyep1-In" checked="checked"/>
+											<img src="./img/order/order-pay1.png" class="payTyep1-img">
+										</div>
+										<div class="payTyep4" id="other">
+											<input type="radio" name="3" class="payTyep1-In"/>
+											<img src="./img/order/order-pay2.png" class="payTyep1-img">
+										</div>
+										<div class="payTyep2" id="other">
+											<span>更多支付方式></span>
+										</div>
+										<div class="payTyep3" id="other">
+											<input type="radio" name="3" class="payTyep1-In"/>
+											<img src="./img/order/order-pay3.png" class="payTyep1-img">
+										</div>
+								</div>
+								</div>
+								<!-- 隐藏框 -->
+								<div class="payTyep1-hide">
+										<ul class="payTyep1-hide-ul">
+											<li class="payTyep1-hide1" style="border-color:#00c3f5; color:#00c3f5;" >
+												<p class="payTyep1-hide1-sp1" >￥2466.00 x 3期</p>
+												<p class="payTyep1-hide1-sp2">免手续费</p>
+											</li>
+											<li>
+												<p class="payTyep1-hide1-sp3">￥1288.46 x 6期</p>
+												<p class="payTyep1-hide1-sp4">含手续费 ￥55.48/期</p>
+											</li>
+											<li>
+												<p class="payTyep1-hide1-sp3">￥662.73 x 12期</p>
+												<p class="payTyep1-hide1-sp4">含手续费 ￥46.23/期</p>
+											</li>
+										</ul>
+									</div>
+								<!-- 银行卡 -->
+								<div class="pay-main2">
+									<div class="pay-main2-title" >网上银行</div>
+									<div class="pay-main2-content" >
+										<ul class="pay-main2-content-ul" >
+											<li>
+												<input type="radio" name="9" class="pay-main2-content-In"/>
+												<img src="./img/order/order-pay4.png" class="pay-main2-content-Img">
+											</li>
+											<li>
+												<input type="radio" name="9" class="pay-main2-content-In"/>
+												<img src="./img/order/order-pay5.png" class="pay-main2-content-Img">
+											</li>
+											<li>
+												<input type="radio" name="9" class="pay-main2-content-In"/>
+												<img src="./img/order/order-pay6.png" class="pay-main2-content-Img">
+											</li>
+											<li>
+												<input type="radio" name="9" class="pay-main2-content-In"/>
+												<img src="./img/order/order-pay7.png" class="pay-main2-content-Img">
+											</li>
+											<li>
+												<input type="radio" name="9" class="pay-main2-content-In"/>
+												<img src="./img/order/order-pay8.png" class="pay-main2-content-Img">
+											</li>
+											<li class="te">
+												<input type="radio" name="9" class="pay-main2-content-In"/>
+												<img src="./img/order/order-pay9.png" class="pay-main2-content-Img">
+											</li>
+											<li>
+												<input type="radio" name="9" class="pay-main2-content-In"/>
+												<img src="./img/order/order-pay10.png" class="pay-main2-content-Img">
+											</li>
+											<li>
+												<input type="radio" name="9" class="pay-main2-content-In"/>
+												<img src="./img/order/order-pay11.png" class="pay-main2-content-Img">
+											</li>
+											<li>
+												<input type="radio" name="9" class="pay-main2-content-In"/>
+												<img src="./img/order/order-pay12.png" class="pay-main2-content-Img">
+											</li>
+										</ul>
+									</div>
+									<!-- 银行卡详情 -->
+									<div class="main2-contentHide">
+										<div class="contentHide1">
+												<div class="contentHide1-top">
+													<div class="contentHide1-top-Name">银行名称</div>
+													<div class="contentHide1-top-money">限额</div>
+													<div class="contentHide1-top-Ka">支持卡种</div>
+													<div class="contentHide1-top-tel">客服电话</div>
+												</div>
+												<div class="contentHide1-bottom">
+													<div class="contentHide1-bottom-Name">
+														<img src="./img/order/order-pay4.png" class="contentHide1-bottom-NameImg" >
+													</div>
+													<div class="contentHide1-bottom-money">
+														储蓄卡：单笔限额50000元，每日限额100000元；信用卡：单笔限额300元，每日限额5000元。
+													</div>
+													<div class="contentHide1-bottom-Ka">
+														<p>信用卡/储蓄卡</p>
+													</div>
+													<div class="contentHide1-bottom-tel">
+														<p>95566</p>
+													</div>
+												</div>
+										</div>
+										<div class="contentHide1" >
+											<div class="contentHide1-top">
+												<div class="contentHide1-top-Name">银行名称</div>
+												<div class="contentHide1-top-money">限额</div>
+												<div class="contentHide1-top-Ka">支持卡种</div>
+												<div class="contentHide1-top-tel">客服电话</div>
+											</div>
+											<div class="contentHide1-bottom">
+												<div class="contentHide1-bottom-Name">
+													<img src="./img/order/order-pay5.png" class="contentHide1-bottom-NameImg" >
+												</div>
+												<div class="contentHide1-bottom-money">
+													准贷记卡：动态口令卡用户单笔限额5000元；<br>
+													储蓄卡：动态口令用户限额50000元；网银盾用户限额500000元；<br>
+												</div>
+												<div class="contentHide1-bottom-Ka">信用卡/储蓄卡/准贷记卡</div>
+												<div class="contentHide1-bottom-tel">95533</div>
+											</div>
+										</div>
+										<div class="contentHide1" >
+											<div class="contentHide1-top">
+												<div class="contentHide1-top-Name">银行名称</div>
+												<div class="contentHide1-top-money">限额</div>
+												<div class="contentHide1-top-Ka">支持卡种</div>
+												<div class="contentHide1-top-tel">客服电话</div>
+											</div>
+											<div class="contentHide1-bottom">
+												<div class="contentHide1-bottom-Name">
+													<img src="./img/order/order-pay6.png" class="contentHide1-bottom-NameImg" >
+												</div>
+												<div class="contentHide1-bottom-money">
+													储蓄卡：动态口令卡用户单笔限额1000元，每日限额3000元；<br>
+													准贷记卡：动态口令卡用户单笔限额1000元，每日限额3000元；移动证书用户无限额。<br>
+												</div>
+												<div class="contentHide1-bottom-Ka">借记卡/准贷记卡</div>
+												<div class="contentHide1-bottom-tel">95599</div>
+											</div>
+										</div>
+										<div class="contentHide1" >
+											<div class="contentHide1-top">
+												<div class="contentHide1-top-Name">银行名称</div>
+												<div class="contentHide1-top-money">限额</div>
+												<div class="contentHide1-top-Ka">支持卡种</div>
+												<div class="contentHide1-top-tel">客服电话</div>
+											</div>
+											<div class="contentHide1-bottom">
+												<div class="contentHide1-bottom-Name">
+													<img src="./img/order/order-pay7.png" class="contentHide1-bottom-NameImg" >
+												</div>
+												<div class="contentHide1-bottom-money">
+													U盾用户：信用卡单笔限额1000元与信用卡本身限额孰低,每日限额：100万元；<br>
+													柜面注册存量静态密码用户：信用卡每日限额300元与信用卡本身限额孰低<br>
+												</div>
+												<div class="contentHide1-bottom-Ka">信用卡/储蓄卡</div>
+												<div class="contentHide1-bottom-tel">95588</div>
+											</div>
+										</div>
+										<div class="contentHide1" >
+											<div class="contentHide1-top">
+												<div class="contentHide1-top-Name">银行名称</div>
+												<div class="contentHide1-top-money">限额</div>
+												<div class="contentHide1-top-Ka">支持卡种</div>
+												<div class="contentHide1-top-tel">客服电话</div>
+											</div>
+											<div class="contentHide1-bottom">
+												<div class="contentHide1-bottom-Name">
+													<img src="./img/order/order-pay8.png" class="contentHide1-bottom-NameImg" >
+												</div>
+												<div class="contentHide1-bottom-money">
+													手机注册版：信用卡限额5000元与信用卡本身限额孰低；储蓄卡和准贷记卡限额5000元；<br>
+													证书认证版：信用卡限额1万元与信用卡本身限额孰低；储蓄卡和准贷记卡限额5万元。
+												</div>
+												<div class="contentHide1-bottom-Ka">信用卡/储蓄卡/准贷记卡</div>
+												<div class="contentHide1-bottom-tel">95559</div>
+											</div>
+										</div>
+										<div class="contentHide1" >
+											<div class="contentHide1-top">
+												<div class="contentHide1-top-Name">银行名称</div>
+												<div class="contentHide1-top-money">限额</div>
+												<div class="contentHide1-top-Ka">支持卡种</div>
+												<div class="contentHide1-top-tel">客服电话</div>
+											</div>
+											<div class="contentHide1-bottom">
+												<div class="contentHide1-bottom-Name">
+													<img src="./img/order/order-pay9.png" class="contentHide1-bottom-NameImg" >
+												</div>
+												<div class="contentHide1-bottom-money">
+													储蓄卡/准贷记卡：大众版限额500元；专业版无限额；<br>
+													信用卡：单笔限额499.99元，每日限额为信用卡本身透支额度。
+												</div>
+												<div class="contentHide1-bottom-Ka">信用卡/储蓄卡/准贷记卡</div>
+												<div class="contentHide1-bottom-tel">95555</div>
+											</div>
+										</div>
+										<div class="contentHide1" >
+											<div class="contentHide1-top">
+												<div class="contentHide1-top-Name">银行名称</div>
+												<div class="contentHide1-top-money">限额</div>
+												<div class="contentHide1-top-Ka">支持卡种</div>
+												<div class="contentHide1-top-tel">客服电话</div>
+											</div>
+											<div class="contentHide1-bottom">
+												<div class="contentHide1-bottom-Name">
+													<img src="./img/order/order-pay10.png" class="contentHide1-bottom-NameImg" >
+												</div>
+												<div class="contentHide1-bottom-money">
+													单张汇票收据限额5000元；<br>
+													邮政网汇e充值：普通账户1次/日；已开通短信提醒的账户3次/日；已安装数字证书的账户不限次数。
+												</div>
+												<div class="contentHide1-bottom-Ka">不需要邮政账户也可以</div>
+												<div class="contentHide1-bottom-tel">11185</div>
+											</div>
+										</div>
+										<div class="contentHide1" >
+											<div class="contentHide1-top">
+												<div class="contentHide1-top-Name">银行名称</div>
+												<div class="contentHide1-top-money">限额</div>
+												<div class="contentHide1-top-Ka">支持卡种</div>
+												<div class="contentHide1-top-tel">客服电话</div>
+											</div>
+											<div class="contentHide1-bottom">
+												<div class="contentHide1-bottom-Name">
+													<img src="./img/order/order-pay11.png" class="contentHide1-bottom-NameImg" >
+												</div>
+												<div class="contentHide1-bottom-money">
+													储蓄卡：证书用户无限额；e卡每日5000元；<br>
+													注：建行企业版的支付限额以在银行设置的限额为准）
+												</div>
+												<div class="contentHide1-bottom-Ka">信用卡/储蓄卡</div>
+												<div class="contentHide1-bottom-tel">95561</div>
+											</div>
+										</div>
+										<div class="contentHide1" >
+											<div class="contentHide1-top">
+												<div class="contentHide1-top-Name">银行名称</div>
+												<div class="contentHide1-top-money">限额</div>
+												<div class="contentHide1-top-Ka">支持卡种</div>
+												<div class="contentHide1-top-tel">客服电话</div>
+											</div>
+											<div class="contentHide1-bottom">
+												<div class="contentHide1-bottom-Name">
+													<img src="./img/order/order-pay12.png" class="contentHide1-bottom-NameImg" >
+												</div>
+												<div class="contentHide1-bottom-money">
+													一代E盾 单笔限额：5万，日累计限额:20万；<br>
+													一代E盾+动态密码 单笔限额：50万，日累计限额：100万；<br>
+												</div>
+												<div class="contentHide1-bottom-Ka">储蓄卡</div>
+												<div class="contentHide1-bottom-tel">95594</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- 支付方式 -->
+						<div class="order-pay-content">
+							<div class="total-money">
+								<div class="total-money1">
+									<span class="total-money1-sp1">总金额：</span>
+									<span class="total-money1-sp2">￥7398.00</span>
+								</div>
+								<div class="total-money2">
+									<span class="total-money1-sp1">运费：</span>
+									<span class="total-money1-sp2">￥0.00</span>
+								</div>
+							</div>
+							<div class="pay-moneys">
+								<div class="pay-moneys1">
+									<span class="total-money1-sp1">应付：</span>
+									<span class="total-money1-sp3">￥7398.00</span>
+								</div>
+								<div class="pay-moneys2">
+									<a href="pay.html">
+										<div class="pay-moneys2-box">下单并支付</div>
+									</a>
+								</div>
+								<div class="tocal-tip">
+									该订单含付款减库存商品，支付完成后才会为您预留库存！
+								</div>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+			<div class="order-footer">
+				<div class="index-footers-link">
+					<div class="index-footers-wrap">
+						<div class="index-footers1">
+							<ul class="index-footers1-ul">
+								<li class="index-footers-SF1">
+									<a href="#" class="index-footers-a1">
+										<img src="./img/index/index-footers1.png" class="index-footers-img1">
+										<span class="index-footers-sp1">满80免运费</span>
+									</a>
+								</li>
+								<li class="index-footers-SF2">
+									<a href="#" class="index-footers-a2">
+										<img src="./img/index/index-footers2.png" class="index-footers-img2">
+										<span class="index-footers-sp2">100+ 城市次日送达</span>
+									</a>
+								</li>
+								<li class="index-footers-SF3">
+									<a href="#" class="index-footers-a3">
+										<img src="./img/index/index-footers3.png" class="index-footers-img3">
+										<span class="index-footers-sp3">7天无理由退货</span>
+									</a>
+								</li>
+								<li class="index-footers-SF4">
+									<a href="#" class="index-footers-a4">
+										<img src="./img/index/index-footers4.png" class="index-footers-img4">
+										<span class="index-footers-sp4">15天换货保障</span>
+									</a>
+								</li>
+								<li class="index-footers-SF5">
+									<a href="#" class="index-footers-a5">
+										<img src="./img/index/index-footers5.png" class="index-footers-img5">
+										<span class="index-footers-sp5">1年免费保修</span>
+									</a>
+								</li>
+								<li class="index-footers-SF6">
+									<a href="#" class="index-footers-a6">
+										<img src="./img/index/index-footer6.png" class="index-footers-img6">
+										<span class="index-footers-sp6">上门快修</span>
+									</a>
+								</li>
+							</ul>
+							<div class="index-footers-text1">
+								<span class="index-footers-tip1">周一至周日 8:00-20.00</span>
+								<p class="index-footers-tip2">400-788-3333</p>
+								<a href="#" class="index-footers-tip3">在线客服</a>
+							</div>
+						</div>
+						<hr class="index-footers-hr">
+						<div class="index-footers2">
+							<div class="index-footers2-row">
+								<div class="index-footers2-info">
+									<div class="index-footers2-left">
+										<ul class="index-footers2-ul">
+											<li class="index-footers2-info1">
+												<a href="#" class="index-footers2-a1">了解魅族</a>
+											</li>
+											<li class="index-footers2-info2">
+												<a href="#" class="index-footers2-a2">加入我们</a>
+											</li>
+											<li class="index-footers2-info3">
+												<a href="#" class="index-footers2-a3">联系我们</a>
+											</li>
+											<li class="index-footers2-info4">
+												<a href="#" class="index-footers2-a4">Flyme</a>
+											</li>
+											<li class="index-footers2-info5">
+												<a href="#" class="index-footers2-a5">魅族社区</a>
+											</li>
+											<li class="index-footers2-info6">
+												<a href="#" class="index-footers2-a6">天猫旗舰店</a>
+											</li>
+											<li class="index-footers2-info7">
+												<a href="#" class="index-footers2-a7">问题反馈</a>
+											</li>
+											<li class="index-footers2-info8">
+												<a href="#" class="index-footers2-a8">线上销售授权名单公示</a>
+											</li>
+											<li class="index-footers2-info9">
+												<a href="#" class="index-footers2-a9">出版物经营许可证</a>
+											</li>
+											<li class="index-footers2-info10">
+												<a href="#" class="index-footers2-a10">
+													<img src="./img/index/index-footers6.png" class="index-footerImg6">
+													简体中文
+												</a>
+											</li>
+										</ul>
+										<div class="index-footers2-box">
+											©2020 Meizu Telecom Equipment Co., Ltd. All rights reserved.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+											<a target="_blank" href="https://beian.miit.gov.cn/#/Integrated/index" hidefocus="true" class="index-footers2-box-a1">粤ICP备13003602号</a>
+											<a target="_blank" href="./img/index/index-footers10.jpg" hidefocus="true" class="index-footers2-box-a2">合字B2-20170010 </a>
+											<a target="_blank" href="./img/index/index-footers11.jpg" hidefocus="true" class="index-footers2-box-a3">营业执照</a>
+											<!-- 选项卡 -->
+											<a target="_blank" href="https://www.meizu.com/legal.html" hidefocus="true" class="index-footers2-box-a4">法律声明</a>
+											<a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44049102496009" hidefocus="true"  class="index-footers2-box-a5">
+												<img src="./img/index/index-footers7.png" class="index-footersImg7">
+												粤公网安备 44049102496009 号
+											</a>
+											<a class="footer-info-license" target="_blank" rel="nofollow" href="http://210.76.65.188/" hidefocus="true" class="index-footers2-box-a6" >
+												<img src="./img/index/index-footers8.png" class="index-footersImg8">
+											</a>
+											<a class="footer-info-license" target="_blank" rel="nofollow" href="http://210.76.65.188/" hidefocus="true" class="index-footers2-box-a7" >
+												<img src="./img/index/index-footers11.png" class="index-footersImg11">
+											</a>
+											<a class="footer-info-license" target="_blank" rel="nofollow" href="http://210.76.65.188/" hidefocus="true" class="index-footers2-box-a8" >
+												<img src="./img/index/index-footers9.png" class="index-footersImg9">
+											</a>
+										</div>
+									</div>
+									<div class="index-footers2-right">
+										<a href="#" target="_blank" class="index-footers2-righta1">
+											<img src="./img/index/index-footer-12.png" class="index-footers2-rightImg1" >
+											<img src="./img/index/index-footer12.png" class="index-footers2-rightImg2">
+										</a>
+										<a href="#" target="_blank" class="index-footers2-righta2">
+											<img src="./img/index/index-footer-13.png" class="index-footers2-rightImg3" >
+											<img src="./img/index/index-footer13.png"  class="index-footers2-rightImg4">
+										</a>
+										<a href="#" target="_blank" class="index-footers2-righta3">
+											<img src="./img/index/index-footer14.png" class="index-footers2-rightImg5">
+										</a>
+										<a href="#" target="_blank" class="index-footers2-righta4">
+											<img src="./img/index/index-footer15.png" class="index-footers2-rightImg6">
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 侧边栏 -->
+			<div class="cart-rightLan">
+				<ul class="cart-rightLan-Ul">
+					<li class="cart-rightLan-App">
+						<b>APP</b>
+					</li>
+					<li class="cart-rightLan-Top">
+						<a href="#">
+							<img src="./img/cart/cart-up.png" class="cart-rightLan-TopImg">
+							回到顶部
+						</a>
+					</li>
+				</ul>
+				<div class="cart-rightLan-AppHide">
+					<img src="./img/cart/cart-downApp.png" class="cart-rightLan-AppHideImg" >
+					<p class="cart-rightLan-AppHideP">扫码下载魅族商城APP</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

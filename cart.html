@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="./css/cart.css"/>
+		<script src="js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="./js/cart.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="cart-page">
+			<div class="cart-header">
+				<div class="cart-headers">
+					<div class="cart-header-logo">
+						<a href="index.html" class="on-title-a">
+							<img src="./img/cart/cart-logo.png" class="on-title-img" >
+						</a>
+					</div>
+					<ul class="cart-header-order">
+						<li>
+							<span class="cart-header-order1">购物车</span>
+							<span class="cart-header-order2"> > </span>
+						</li>
+						<li>
+							<span class="cart-header-order3">确认订单</span>
+							<span class="cart-header-order2"> > </span>
+						</li>
+						<li>
+							<span class="cart-header-order3">在线支付</span>
+							<span class="cart-header-order2"> > </span>
+						</li>
+						<li>
+							<span class="cart-header-order3">完成</span>
+						</li>
+					</ul>
+					<ul class="cart-header-user">
+						<li>
+							<a href="#" class="cart-header-usera">我的订单</a>
+						</li>
+						<li>
+							<span class="cart-header-userp">用户679388496的商城</span>
+							<img src="./img/cart/cart-down.png" class="cart-header-userImg">
+						</li>
+					</ul>
+					<ul class="cart-header-userHide">
+						<li>
+							<a href="#">地址管理</a>
+						</li>
+						<li>
+							<a href="#">我的收藏</a>
+						</li>
+						<li>
+							<a href="#">我的回购金</a>
+						</li>
+						<li>
+							<a href="#">问题反馈</a>
+						</li>
+						<li>
+							<a href="on.html">退出</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- 购物车 -->
+			<div class="cart-main">
+				<div class="cart-mains">
+					<!-- 购物车标题 -->
+					<div class="cart-title">
+						<div class="cart-titleBox">
+							<input type="checkbox" id="cart-listAll" />
+							<span class="cart-titleAll">全选</span>
+						</div>
+						<div class="cart-price">单价(元)</div>
+						<div class="cart-num">数量</div>
+						<div class="cart-money">小计(元)</div>
+						<div class="cart-remove">移除</div>
+					</div>
+					<!-- 购物车列表 -->
+				<!-- <div class="cart-list">
+						<div>
+							<input type="checkbox" class="cart-listCheckbox"/>
+						</div>
+					
+						<div class = 'cartListInfo'>
+							<a href="details.html" target="_blank" class="cartListInfo-a">
+								<img src="./img/cart/cart1.png" class="cartListInfo-img">
+							</a>
+							<a href="details.html" target="_blank" id = 'cartListInfoP'>
+								<p class="cartListInfoP1">魅族 17</p>
+								<p class="cartListInfoP2">全网通公开版 十七度灰 8+128GB</p>
+							</a>
+						</div>
+						
+						<div class = 'cartListPrice'>3699.00元</div>
+						
+						<div class = 'cartListCount'>
+							<div class = 'cartListCountWid'>
+								<button type="button" id = 'cartListCountRe'>-</button>
+								<input type="text" value="1" class="cartListCounts"/>
+								<button type="button"  id = 'cartListCountAdd'>+</button>
+							</div>
+						</div>
+						
+						<div class = 'cartListAllPrice'>3699.00元</div>
+						
+						<div class = 'cartListModify'>删除</div>
+					</div> -->
+				</div>
+				<div id = 'cartTotalPrice'>
+					<div id = 'cartTotalPrices'>
+						<div id = 'cartTotalPriceYuan'>
+							合计(不含运费):
+							<span style = 'font-size:22px;color:#f00' id = 'cartTotalP'>0</span>
+							.00元
+						</div>
+						<div id = 'cartSelectNum'>共&nbsp;4&nbsp;件商品,已选择&nbsp;0&nbsp;件</div>
+						<a href="order.html">
+							<div id = 'cartToMon'>
+								去结算
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="cart-footer">
+				<div class="index-footers-link">
+					<div class="index-footers-wrap">
+						<div class="index-footers1">
+							<ul class="index-footers1-ul">
+								<li class="index-footers-SF1">
+									<a href="#" class="index-footers-a1">
+										<img src="./img/index/index-footers1.png" class="index-footers-img1">
+										<span class="index-footers-sp1">满80免运费</span>
+									</a>
+								</li>
+								<li class="index-footers-SF2">
+									<a href="#" class="index-footers-a2">
+										<img src="./img/index/index-footers2.png" class="index-footers-img2">
+										<span class="index-footers-sp2">100+ 城市次日送达</span>
+									</a>
+								</li>
+								<li class="index-footers-SF3">
+									<a href="#" class="index-footers-a3">
+										<img src="./img/index/index-footers3.png" class="index-footers-img3">
+										<span class="index-footers-sp3">7天无理由退货</span>
+									</a>
+								</li>
+								<li class="index-footers-SF4">
+									<a href="#" class="index-footers-a4">
+										<img src="./img/index/index-footers4.png" class="index-footers-img4">
+										<span class="index-footers-sp4">15天换货保障</span>
+									</a>
+								</li>
+								<li class="index-footers-SF5">
+									<a href="#" class="index-footers-a5">
+										<img src="./img/index/index-footers5.png" class="index-footers-img5">
+										<span class="index-footers-sp5">1年免费保修</span>
+									</a>
+								</li>
+								<li class="index-footers-SF6">
+									<a href="#" class="index-footers-a6">
+										<img src="./img/index/index-footer6.png" class="index-footers-img6">
+										<span class="index-footers-sp6">上门快修</span>
+									</a>
+								</li>
+							</ul>
+							<div class="index-footers-text1">
+								<span class="index-footers-tip1">周一至周日 8:00-20.00</span>
+								<p class="index-footers-tip2">400-788-3333</p>
+								<a href="#" class="index-footers-tip3">在线客服</a>
+							</div>
+						</div>
+						<hr class="index-footers-hr">
+						<div class="index-footers2">
+							<div class="index-footers2-row">
+								<div class="index-footers2-info">
+									<div class="index-footers2-left">
+										<ul class="index-footers2-ul">
+											<li class="index-footers2-info1">
+												<a href="#" class="index-footers2-a1">了解魅族</a>
+											</li>
+											<li class="index-footers2-info2">
+												<a href="#" class="index-footers2-a2">加入我们</a>
+											</li>
+											<li class="index-footers2-info3">
+												<a href="#" class="index-footers2-a3">联系我们</a>
+											</li>
+											<li class="index-footers2-info4">
+												<a href="#" class="index-footers2-a4">Flyme</a>
+											</li>
+											<li class="index-footers2-info5">
+												<a href="#" class="index-footers2-a5">魅族社区</a>
+											</li>
+											<li class="index-footers2-info6">
+												<a href="#" class="index-footers2-a6">天猫旗舰店</a>
+											</li>
+											<li class="index-footers2-info7">
+												<a href="#" class="index-footers2-a7">问题反馈</a>
+											</li>
+											<li class="index-footers2-info8">
+												<a href="#" class="index-footers2-a8">线上销售授权名单公示</a>
+											</li>
+											<li class="index-footers2-info9">
+												<a href="#" class="index-footers2-a9">出版物经营许可证</a>
+											</li>
+											<li class="index-footers2-info10">
+												<a href="#" class="index-footers2-a10">
+													<img src="./img/index/index-footers6.png" class="index-footerImg6">
+													简体中文
+												</a>
+											</li>
+										</ul>
+										<div class="index-footers2-box">
+											©2020 Meizu Telecom Equipment Co., Ltd. All rights reserved.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+											<a target="_blank" href="https://beian.miit.gov.cn/#/Integrated/index" hidefocus="true" class="index-footers2-box-a1">粤ICP备13003602号</a>
+											<a target="_blank" href="./img/index/index-footers10.jpg" hidefocus="true" class="index-footers2-box-a2">合字B2-20170010 </a>
+											<a target="_blank" href="./img/index/index-footers11.jpg" hidefocus="true" class="index-footers2-box-a3">营业执照</a>
+											<!-- 选项卡 -->
+											<a target="_blank" href="https://www.meizu.com/legal.html" hidefocus="true" class="index-footers2-box-a4">法律声明</a>
+											<a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44049102496009" hidefocus="true"  class="index-footers2-box-a5">
+												<img src="./img/index/index-footers7.png" class="index-footersImg7">
+												粤公网安备 44049102496009 号
+											</a>
+											<a class="footer-info-license" target="_blank" rel="nofollow" href="http://210.76.65.188/" hidefocus="true" class="index-footers2-box-a6" >
+												<img src="./img/index/index-footers8.png" class="index-footersImg8">
+											</a>
+											<a class="footer-info-license" target="_blank" rel="nofollow" href="http://210.76.65.188/" hidefocus="true" class="index-footers2-box-a7" >
+												<img src="./img/index/index-footers11.png" class="index-footersImg11">
+											</a>
+											<a class="footer-info-license" target="_blank" rel="nofollow" href="http://210.76.65.188/" hidefocus="true" class="index-footers2-box-a8" >
+												<img src="./img/index/index-footers9.png" class="index-footersImg9">
+											</a>
+										</div>
+									</div>
+									<div class="index-footers2-right">
+										<a href="#" target="_blank" class="index-footers2-righta1">
+											<img src="./img/index/index-footer-12.png" class="index-footers2-rightImg1" >
+											<img src="./img/index/index-footer12.png" class="index-footers2-rightImg2">
+										</a>
+										<a href="#" target="_blank" class="index-footers2-righta2">
+											<img src="./img/index/index-footer-13.png" class="index-footers2-rightImg3" >
+											<img src="./img/index/index-footer13.png"  class="index-footers2-rightImg4">
+										</a>
+										<a href="#" target="_blank" class="index-footers2-righta3">
+											<img src="./img/index/index-footer14.png" class="index-footers2-rightImg5">
+										</a>
+										<a href="#" target="_blank" class="index-footers2-righta4">
+											<img src="./img/index/index-footer15.png" class="index-footers2-rightImg6">
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 侧边栏 -->
+			<div class="cart-rightLan">
+				<ul class="cart-rightLan-Ul">
+					<li class="cart-rightLan-App">
+						<b>APP</b>
+					</li>
+					<li class="cart-rightLan-Top">
+						<a href="#">
+							<img src="./img/cart/cart-up.png" class="cart-rightLan-TopImg">
+							回到顶部
+						</a>
+					</li>
+				</ul>
+				<div class="cart-rightLan-AppHide">
+					<img src="./img/cart/cart-downApp.png" class="cart-rightLan-AppHideImg" >
+					<p class="cart-rightLan-AppHideP">扫码下载魅族商城APP</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

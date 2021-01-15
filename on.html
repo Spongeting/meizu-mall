@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="./css/on.css"/>
+		<script src="js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="./js/on.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="on-page">
+			<!-- 主体 -->
+			<div class="on-content">
+				<!-- logo -->
+				<div class="on-title">
+					<a href="index.html" class="on-title-a">
+						<img src="./img/on/on-logo.png" class="on-title-img" >
+					</a>
+				</div>	
+				<!-- form表单 -->
+				<div class="on-mains">
+					<div class="on-main-bgBox">
+						<!-- 表单 -->
+						<form class="on-main-form">
+							<!-- 跳转图标 -->
+							<a href="post.html" class="on-from-goPost"></a>
+							<!-- 验证码登录标题 -->
+							<div class="on-main-title">
+								<h3 class="on-main-title-h3">验证码登录</h3>
+							</div>
+							<!-- 提示输入有误 -->
+							<div class="on-tip-Bbox">
+								<div class="on-tip-box">
+									<div class="on-tip-box-err"></div>
+									<div class="on-tip-box-text">
+										请正确输入您的手机号码，
+										<a href="post.html" class="on-tip-box-texta">立即注册</a>
+									</div>
+									<div class="on-tip-box-close"></div>
+								</div>
+							</div>
+							<!-- 验证手机号码 -->
+							<div class="on-main-cyCode">
+								<div class="on-main-cyCodeText">
+									<span class="on-main-cyCodet1">
+										<!-- /* +86 */ -->
+										<input type="text" value="+86" class="on-main-cyCodeIn1"/>
+										<!-- /* 点击出现下拉的按钮 */ -->
+										<div class="on-main-cyCode-down">
+											<img src="./img/on/on-down.png" class="on-main-cyCode-downImg">
+										</div>
+										<!-- /* 隐藏电话前缀 */ -->
+										<div class="on-main-cyCode-Hidedown">
+											<ul class="on-main-cyCode-Hidedown-ul">
+												<li>
+													<span class="on-main-cyCode-Hidedown-t1">中国</span>
+													<span class="on-main-cyCode-Hidedown-t2">+86</span>
+												</li>
+												<li>
+													<span class="on-main-cyCode-Hidedown-t1">中国</span>
+													<span class="on-main-cyCode-Hidedown-t2">+86</span>
+												</li>
+												<li>
+													<span class="on-main-cyCode-Hidedown-t1">中国台湾</span>
+													<span class="on-main-cyCode-Hidedown-t2">+886</span>
+												</li>
+												<li>
+													<span class="on-main-cyCode-Hidedown-t1">中国香港</span>
+													<span class="on-main-cyCode-Hidedown-t2">+852</span>
+												</li>
+												<li>
+													<span class="on-main-cyCode-Hidedown-t1">Brazil</span>
+													<span class="on-main-cyCode-Hidedown-t2">+55</span>
+												</li>
+												<li>
+													<span class="on-main-cyCode-Hidedown-t1">India</span>
+													<span class="on-main-cyCode-Hidedown-t2">+91</span>
+												</li>
+												<li>
+													<span class="on-main-cyCode-Hidedown-t1">Indonesia</span>
+													<span class="on-main-cyCode-Hidedown-t2">+62</span>
+												</li>
+												<li>
+													<span class="on-main-cyCode-Hidedown-t1">Malaysia</span>
+													<span class="on-main-cyCode-Hidedown-t2">+60</span>
+												</li>
+												<li>
+													<span class="on-main-cyCode-Hidedown-t1">Andorra</span>
+													<span class="on-main-cyCode-Hidedown-t2">+376</span>
+												</li>
+												<li>
+													<span class="on-main-cyCode-Hidedown-t1">Afghanistan</span>
+													<span class="on-main-cyCode-Hidedown-t2">+93</span>
+												</li>
+												<li>
+													<span class="on-main-cyCode-Hidedown-t1">Antigua and Barbuda</span>
+													<span class="on-main-cyCode-Hidedown-t2">+1</span>
+												</li>
+												<li>
+													<span class="on-main-cyCode-Hidedown-t1">AI</span>
+													<span class="on-main-cyCode-Hidedown-t2">+1</span>
+												</li>
+												<li>
+													<span class="on-main-cyCode-Hidedown-t1">Albania</span>
+													<span class="on-main-cyCode-Hidedown-t2">+355</span>
+												</li>
+												<li>
+													<span class="on-main-cyCode-Hidedown-t1">Armenia</span>
+													<span class="on-main-cyCode-Hidedown-t2">+374</span>
+												</li>
+											</ul>
+										</div>
+									</span>
+									<input type="text" placeholder="手机号码" class="on-main-cyCodeIn2"/>
+								</div>
+							</div>
+							<!-- 验证码 -->
+							<div class="on_check">
+								<div class="on_check1">
+									<span class="on_check1_t1">验证码：</span>
+									<input type="text"placeholder="输入验证码" class="on_check1_t2"/>
+								</div>
+								<input type="button"  value="点击获取验证码" class="on_check2"/>
+								<input type="text" class="on_check3"/>
+								<input type="button" value="看不清换一张" class="on_check4" />
+							</div>
+							<!-- 验证码错误 -->
+							<div class="on-checkHides">
+								<div class="on-checkHides-err"></div>
+								<div class="on-checkHides-text">
+									验证码输入错误
+								</div>
+								<div class="on-checkHides-close"></div>
+							</div>
+							<!-- 登录 -->
+							<div class="on-onBun">
+								<a class="on-onBun-a">登录</a>
+							</div>
+							<div class="on-post">
+								<a href="go.html" class="on-post-a1">注册</a>
+								<a href="#" class="on-post-a2">忘记密码</a>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="on-footer">
+				<div class="on-footerInner">
+					<div class="on-footerTop">
+						<div class="on-footerTop-left">
+							<ul class="on-footerTop-left-ul">
+								<li>关于魅族</li>
+								<li>工作机会</li>
+								<li>联系我们</li>
+								<li>法律声明</li>
+								<li>常见问题</li>
+								<li class="on-footerTop-left-lang">
+									简体中文 &nbsp;&nbsp;&nbsp;&nbsp;
+									<img src="./img/on/on-left1.png" class="on-footerTop-left-langImg">
+								</li>
+							</ul>
+							<div class="on-footerTop-leftHide">
+								<div class="on-footerTop-leftHide1">简体中文</div>
+								<div>English</div>
+							</div>
+						</div>
+						<div class="on-footerTop-center">
+							<span class="on-footerTop-centerp1">客服热线</span>
+							<span class="on-footerTop-centerp2">400-788-3333</span>
+							<a href="#" class="on-footerTop-centerp3">在线客服</a>
+						</div>
+						<div class="on-footerTop-right">
+							<a href="">
+								<img src="./img/on/on-rightW.png" class="on-footerTop-righta">
+							</a>
+							<a href="">
+								<img src="./img/on/on-rightB.png" >
+							</a>
+							<a href="">
+								<img src="./img/on/on-rightQ.png" >
+							</a>
+							<img src="./img/on/on-right-w.png" class="on-right-w">
+						</div>
+					</div>
+					<div class="on-footer-Bottom">
+						<div class="on-footer-Bottoms">
+							<span class="on-footer-Bottomsp1">©2020 Meizu Telecom Equipment Co., Ltd. All rights reserved.&nbsp;</span>
+							<a href="#">
+								备案号: 粤ICP备13003602号-4 &nbsp;
+							</a>
+							<a href="#">
+								经营许可证编号: 粤B2-20130198 &nbsp;
+							</a>
+							<a href="#">
+								营业执照 &nbsp;
+							</a>
+							<a href="#" class="on-footer-BottomsImga">
+								<img src="./img/on/ghs.png" class="on-footer-BottomsImg" > &nbsp;
+							</a>
+							<a href="#" class="on-footer-Bottomsa">
+								粤公网安备 44049102496076号
+							</a>
+							
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
